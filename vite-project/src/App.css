@@ -1,0 +1,34 @@
+section {
+  padding-top: 150px;
+}
+.item-div {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+}
+.item-div img {
+
+  width: 100% ; object-position: center; max-height: 600px;
+}
+header.sticky {
+  background: #fff;
+  padding: 20px 10%;
+  box-shadow: 0 0 10pxrgb (0 0 0 /10%);
+}
+.btns-div > button {
+  background-color: rgb(236, 124, 20);
+  padding: 20px 35px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+}
+.t-name {
+  width: 30%;
+  color: rgb(86, 85, 85);
+  font-size: 21px;
+}
+.desc {
+  color: rgb(48, 48, 48);
+  font-size: 22px; 
+}

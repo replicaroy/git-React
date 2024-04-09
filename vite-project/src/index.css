@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; list-style: none; scroll-behavior: smooth;
+}
+.header{
+  position: fixed; top: 0; right: 0; left: 0; width: 100%; 
+ }
+ 
