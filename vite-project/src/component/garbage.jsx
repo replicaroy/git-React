@@ -1,18 +1,6 @@
 
- 
-
-
-  const Cartpage = () => {
-    let vitearray = JSON.parse(localStorage.getItem('vitecart'))|| [] 
-    const remove = (index)=>{
-        vitearray.splice(index,1)
-        localStorage.setItem('vitecart', JSON.stringify(vitearray));
-    }
-   
-    function ProductOverview(item) {
-      localStorage.setItem('Shopitems', JSON.stringify(item));
-      window.location.href = "./Productpage";
-    }
+const Cartpage = () => {
+    let vitearray = JSON.parse(localStorage.getItem('vitecart')) || []
 
 
   function increase(ele){
@@ -21,16 +9,13 @@
     updatecart(vitearray)    
   } 
 
-
-  function decrease(ele,index){
+  let qbtn = document.querySelector('.q-btn')
+  function decrease(ele){
     
     console.log(ele.quantity);
     if(ele.quantity >1){
       ele.quantity--      
-    }   
-    if(ele.quantity == 1)  {
-      remove(index)
-    } 
+    }    
     updatecart(vitearray)    
   } 
 
@@ -52,7 +37,7 @@
     { vitearray.map((ele, index)=>{  
       
       if(!ele.quantity){
-        ele.quantity = quantity
+        ele.quantity = 1
         console.log(ele);
       }
     return(
